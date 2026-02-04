@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 function Home(){
    return ( 
    <section className="min-h-screen min-w-screen bg-black text-white flex items-center justify-between px-12 py-24">
@@ -13,10 +14,10 @@ function Home(){
            <span className="text-white">Developer</span>
          </h2> 
          <p className="text-lg text-gray-200 mb-6"> I'm a web developer based in Kenya. I help you build beautiful websites your users will love. </p> 
-         <div className="flex gap-4"> 
-           <motion.a href="/contact" whileHover={{ scale: 1.05}} className="bg-black text-white px-6 py-3 rounded-lg shadow hover:bg-gray-800 transition"> Get In Touch </motion.a> 
-           <motion.a href="/projects" whileHover={{ scale: 1.05}} className="bg-gray-200 text-black px-6 py-3 rounded-lg shadow hover:bg-gray-300 transition"> Browse Projects </motion.a> 
-         </div>
+         <motion.div  whileHover={{ scale: 1.05}} whileTap={{ scale:0.95 }} className="flex gap-4"> 
+           <Link to ="/contact" className="bg-black text-white px-6 py-3 rounded-lg shadow hover:bg-gray-800 transition"> Get In Touch </Link> 
+           <Link to="/projects" className="bg-gray-200 text-black px-6 py-3 rounded-lg shadow hover:bg-gray-300 transition"> Browse Projects </Link> 
+         </motion.div>
          </motion.div>
          <motion.div
            initial={{ opacity: 0, scale: 0.8 }}
