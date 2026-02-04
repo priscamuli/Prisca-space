@@ -2,7 +2,7 @@ import ProjectCard from "../components/ProjectCard";
 function Projects(){
     const projectList = [
         {title: "Ecommerce Site", description:"Javascrip + Django app", link:"https://josmayawebsite.onrender.com/"},
-        {title: "Portfolio", description:"React-based personal site", link:""}
+        {title: "Portfolio", description:"React-based personal site", link:"https://prisca-space.vercel.app/"}
     ];
     return(
         <section className="min-h-screen min-w-screen bg-black text-white py-16 px-8">
