@@ -1,3 +1,6 @@
+import { motion } from "framer-motion"; 
+import { FaGithub, FaLinkedin } from "react-icons/fa"; 
+import { MdEmail } from "react-icons/md";
 function About(){
     return(
         <section className="min-h-screen min-w-screen bg-black text-white py-16 px-8 flex flex-col items-center">
@@ -8,7 +11,7 @@ function About(){
                 {/*Bio*/}
                 <div>
                     <p className="text-lg text-gray-300 mb-6">
-                        Hi I'm Prisca a web developer. I love building modrn, responsive, and interactive web applications that combine clean design wiyh smooth user experiences.
+                        Hi I'm Prisca a web developer. I love building modern, responsive, and interactive web applications that combine clean design with smooth user experiences.
                     </p>
                     <p className="text-lg text-gray-300 mb-6">
                         My journey started with backend deployment (Django + PostgreSQL), and now I'm focused on frontend polish with React, Vite, Typescript, Tailwindcss, and Framer Motion.I thrive on learning new tools and pushing projects to production.
@@ -24,6 +27,19 @@ function About(){
                     </ul>
                 </div>
             </div>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.5 }} className="flex gap-6" >
+              <a href="https://github.com/priscamuli" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-lg hover:bg-gray-700 transition" >
+                <FaGithub size={20} /> GitHub
+              </a>
+
+              <a href="https://linkedin.com/in/prisca-muli-583b922b9" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-blue-700 px-4 py-2 rounded-lg hover:bg-blue-600 transition" >
+                <FaLinkedin size={20} /> LinkedIn
+              </a>
+
+              <a href="mailto:priscakamanthe31@gmail.com" className="flex items-center gap-2 bg-purple-600 px-4 py-2 rounded-lg hover:bg-purple-500 transition" >
+                <MdEmail size={20} /> Email
+              </a>
+            </motion.div>
         </section>
     );
 };

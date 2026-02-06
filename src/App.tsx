@@ -5,11 +5,13 @@ import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import { AnimatePresence } from "framer-motion";
+import Footer from "./components/Footer";
 
 function App(){
   return(
     <Router>
       <Navbar />
+      <Footer />
       <div className="pt-16">
         <AnimatePresence mode="wait">
         <Routes>
