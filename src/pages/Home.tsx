@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 function Home(){
    return ( 
-   <section className="min-h-screen min-w-screen bg-black text-white flex items-center justify-between px-12 py-24">
+   <section className="min-h-screen min-w-screen bg-black text-white flex items-center justify-between px-6 md:px-12 py-16 flex-col md:flex-row">
      <motion.div 
        initial={{ opacity: 0, x: -50 }}
        animate={{ opacity: 1, x: 0 }}
        transition={{ duration: 1}}
-       className="max-w-xl">
+       className="max-w-xl text-center md:text-left">
          <h1 className="text-4xl font-semibold mb-2">I'm Prisca</h1>
          <h2 className="text-6xl font-bold mb-4"> 
            <span className="text-purple-300">Web</span>{" "} 
@@ -22,7 +22,8 @@ function Home(){
          <motion.div
            initial={{ opacity: 0, scale: 0.8 }}
            animate={{ opacity: 1, scale: 1 }}
-           transition={{ duration: 1, delay: 0.5 }}> 
+           transition={{ duration: 1, delay: 0.5 }}
+           className="mt-8 md:mt-0"> 
             <img src="/prisca.jpeg" alt="Prisca" className="rounded-full border-4 border-purple-300 w-64 h-64 object-cover" /> 
          </motion.div>
     </section> 

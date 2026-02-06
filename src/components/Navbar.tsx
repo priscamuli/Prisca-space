@@ -9,7 +9,7 @@ function Navbar() {
         <nav className="bg-black text-white p-4 fixed w-full top-0 z-0 shadow-md">
             <div className="flex justify-between items-center max-w-6xl mx-auto">
                 <h1 className="text-xl font-bold">Prisca</h1>
-                <ul className="flex justify-center gap-6">
+                <ul className="flex flex-col md:flex-row gap-4 md:gap-6">
                   <li><Link to="/" className={linkClass("/")}>Home</Link></li>
                   <li><Link to="projects" className={linkClass("/projects")}>Projects</Link></li>
                   <li><Link to="about" className={linkClass("/about")}>about</Link></li>
