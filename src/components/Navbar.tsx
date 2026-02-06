@@ -31,10 +31,10 @@ function Navbar() {
              </div> 
              {isOpen &&(
                 <ul className="flex flex-col gap-4 px-6 pb-4 md:hidden bg-black">
-                  <li><Link to="/" className={linkClass("/")}>Home</Link></li>
-                  <li><Link to="projects" className={linkClass("/projects")}>Projects</Link></li>
-                  <li><Link to="about" className={linkClass("/about")}>about</Link></li>
-                  <li><Link to="contact" className={linkClass("/contact")}>Contact</Link></li>
+                  <li><Link to="/" className={linkClass("/")} onClick={() => setIsOpen(false)}>Home</Link></li>
+                  <li><Link to="/projects" className={linkClass("/projects")} onClick={() => setIsOpen(false)}>Projects</Link></li>
+                  <li><Link to="/about" className={linkClass("/about")} onClick={() => setIsOpen(false)}>About</Link></li>
+                  <li><Link to="/contact" className={linkClass("/contact")} onClick={() => setIsOpen(false)}>Contact</Link></li>
                 </ul>
              )}
 
