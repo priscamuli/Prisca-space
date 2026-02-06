@@ -11,7 +11,6 @@ function App(){
   return(
     <Router>
       <Navbar />
-      <Footer />
       <div className="pt-16">
         <AnimatePresence mode="wait">
         <Routes>
@@ -22,6 +21,7 @@ function App(){
         </Routes>
         </AnimatePresence>
       </div>  
+      <Footer />
     </Router>
   );
 };
