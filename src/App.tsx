@@ -10,18 +10,20 @@ import Footer from "./components/Footer";
 function App(){
   return(
     <Router>
-      <Navbar />
-      <div className="pt-16">
-        <AnimatePresence mode="wait">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        </AnimatePresence>
-        <Footer />
-      </div>  
+      <div className="flex flex-col min-h-screen">
+       <Navbar />
+       <div className="grow pt-16">
+         <AnimatePresence mode="wait">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+         </AnimatePresence>
+       </div> 
+       <Footer /> 
+      </div>
     </Router>
   );
 };

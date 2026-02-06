@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 function Home(){
    return ( 
-   <section className=" min-h-screen min-w-screen w-full bg-black text-white flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-16">
+   <section className="w-full bg-black text-white flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-16">
   {/* Text */}
   <motion.div
     initial={{ opacity: 0, x: -50 }}
