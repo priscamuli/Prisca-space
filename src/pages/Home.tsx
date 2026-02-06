@@ -24,7 +24,7 @@ function Home(){
            animate={{ opacity: 1, scale: 1 }}
            transition={{ duration: 1, delay: 0.5 }}
            className="mt-8 md:mt-0"> 
-            <img src="/prisca.jpeg" alt="Prisca" className="rounded-full border-4 border-purple-300 w-64 h-64 object-cover" /> 
+            <img src="/prisca.jpeg" alt="Prisca" className="rounded-full border-4 border-purple-300 md:w-64 md:h-64 object-cover w-40 h-40" /> 
          </motion.div>
     </section> 
   ); 
