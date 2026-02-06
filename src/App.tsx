@@ -11,7 +11,7 @@ function App(){
   return(
     <Router>
       <Navbar />
-      <div className="flex grow pt-16">
+      <div className="pt-16">
         <AnimatePresence mode="wait">
         <Routes>
           <Route path="/" element={<Home />} />
