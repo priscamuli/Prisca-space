@@ -12,7 +12,7 @@ function App(){
     <Router>
       <div className="flex flex-col min-h-screen">
        <Navbar />
-       <div className="grow pt-16">
+       <div className="grow pt-20">
          <AnimatePresence mode="wait">
           <Routes>
             <Route path="/" element={<Home />} />
